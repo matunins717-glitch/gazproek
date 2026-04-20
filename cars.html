@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Гзпроект Сервис Автоматики — каталог спецтехники в аренду. Подбор под задачу, подача на объект, работа по договору.">
+    <meta name="keywords" content="каталог спецтехники, аренда спецтехники, экскаватор, погрузчик, автокран, манипулятор, самосвал, автовышка">
+    <meta property="og:title" content="Гзпроект Сервис Автоматики — техника в аренду">
+    <meta property="og:description" content="Каталог спецтехники в аренду. Подбор под задачу и подача на объект.">
+    <meta property="og:type" content="website">
+    <title>Гзпроект Сервис Автоматики — техника в аренду</title>
+    <link rel="icon" href="img/сфкы.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="cars.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="new-header">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-first">Газпроект</span>
+                    <span class="logo-number">•</span>
+                    <span class="logo-motors">СЕРВИС</span>
+                    <span class="logo-motors">АВТОМАТИКИ</span>
+                </a>
+            </div>
+        </div>
+        <hr class="header-divider">
+        <div class="header-nav">
+            <button class="nav-icon search-icon" aria-label="Поиск">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+            <button class="burger-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="cars.html" class="nav-link">ТЕХНИКА</a>
+                <a href="index.html#conditions" class="nav-link">УСЛОВИЯ</a>
+                <a href="about.html" class="nav-link">О КОМПАНИИ</a>
+                <a href="contact.html" class="nav-link">КОНТАКТЫ</a>
+            </nav>
+            <a class="header-cta" href="contact.html#request">Оставить заявку</a>
+        </div>
+        <hr class="header-divider-bottom">
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon-large" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Поиск..." id="searchInput">
+                    <button class="search-close" aria-label="Закрыть поиск">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="vehicle-filter-section">
+        <div class="vehicle-filter-title">
+            <h2>ПОДБОР ТЕХНИКИ</h2>
+            <p>Выберите параметры и получите подходящие предложения</p>
+        </div>
+        <div class="vehicle-filter">
+            <div class="filter-field" data-filter="brand">
+                <div class="filter-label">ТИП ТЕХНИКИ</div>
+                <button class="filter-select" type="button">
+                    <span class="filter-value" data-current="brand">Все типы</span>
+                    <span class="filter-arrow">⌄</span>
+                </button>
+                <div class="filter-options"></div>
+            </div>
+            <div class="filter-field" data-filter="year">
+                <div class="filter-label">МИН. ЗАКАЗ</div>
+                <button class="filter-select" type="button">
+                    <span class="filter-value" data-current="year">Любой</span>
+                    <span class="filter-arrow">⌄</span>
+                </button>
+                <div class="filter-options"></div>
+            </div>
+            <div class="filter-field" data-filter="price">
+                <div class="filter-label">СТАВКА</div>
+                <button class="filter-select" type="button">
+                    <span class="filter-value" data-current="price">Любая</span>
+                    <span class="filter-arrow">⌄</span>
+                </button>
+                <div class="filter-options"></div>
+            </div>
+            <div class="filter-field" data-filter="bodyType">
+                <div class="filter-label">ЗАДАЧА</div>
+                <button class="filter-select" type="button">
+                    <span class="filter-value" data-current="bodyType">Любая</span>
+                    <span class="filter-arrow">⌄</span>
+                </button>
+                <div class="filter-options"></div>
+            </div>
+            <div class="filter-field" data-filter="specs">
+                <div class="filter-label">ФОРМАТ</div>
+                <button class="filter-select" type="button">
+                    <span class="filter-value" data-current="specs">Любой</span>
+                    <span class="filter-arrow">⌄</span>
+                </button>
+                <div class="filter-options"></div>
+            </div>
+            <button class="filter-search-btn" type="button" aria-label="Найти автомобили">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+            </button>
+        </div>
+        <div class="vehicle-results-meta">
+            <span id="vehicleResultsCount">Найдено 0 авто</span>
+        </div>
+        <div class="vehicle-results" id="vehicleResults"></div>
+    </section>
+    <section class="faq-section" aria-label="Часто задаваемые вопросы">
+        <div class="faq-container">
+            <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Как выбрать технику под задачу?</summary>
+                    <p>Оставьте заявку и укажите тип работ, адрес объекта, сроки и объём. Подберём подходящую технику и рассчитаем оптимальный формат оплаты: час или смена.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Техника предоставляется с оператором?</summary>
+                    <p>Да, техника подаётся с оператором. Время работы фиксируется прозрачно и учитывается в итоговом расчёте.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Как считается стоимость аренды?</summary>
+                    <p>Итоговая сумма зависит от ставки (час/смена), длительности работ, подачи на объект и возможной скидки. На карточках техники доступен калькулятор расчёта.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Какие документы вы предоставляете?</summary>
+                    <p>Работаем по договору и выдаём закрывающие документы. Пакет документов согласуем до начала работ.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Как быстро можете подать технику?</summary>
+                    <p>Зависит от загрузки и удалённости объекта. Обычно подбираем ближайшее окно и согласуем точное время подачи заранее.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo-wrapper">
+                        <div class="footer-logo-text">ГЗПРОЕКТ СЕРВИС АВТОМАТИКИ</div>
+                    </div>
+                    <p class="footer-tagline">Аренда спецтехники с оператором</p>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-contact-minimal">
+                        <a href="tel:+79000000000" class="footer-phone-link">+7 (900) 000-00-00</a>
+                        <p class="footer-address">Работаем по городу и области. Подача техники на объект по согласованию.</p>
+                    </div>
+                    
+                    <div class="footer-social-minimal">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <img src="img/Tilda_Icons_26sn_facebook.png" alt="Facebook" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <img src="img/Group.png" alt="Instagram" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <img src="img/telegram 1.png" alt="Telegram" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Гзпроект Сервис Автоматики. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/cars.js"></script>
+
+</body>
+
+</html>
+

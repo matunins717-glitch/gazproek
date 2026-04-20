@@ -1,0 +1,85 @@
+/* Cars page specific styles */
+
+/* FAQ section */
+.faq-section {
+    padding: 80px 20px;
+    margin-top: 60px;
+    background: #15181F;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 42px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.faq-list {
+    display: grid;
+    gap: 14px;
+}
+
+.faq-item {
+    background: #0B0D10;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 16px 18px;
+}
+
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-size: 26px;
+    line-height: 1;
+}
+
+.faq-item[open] summary::after {
+    content: '−';
+}
+
+.faq-item p {
+    margin: 12px 0 2px;
+    color: #D0D3DA;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .faq-section {
+        padding: 60px 16px;
+    }
+
+    .faq-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-item summary {
+        font-size: 17px;
+    }
+}
+

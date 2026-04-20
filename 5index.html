@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Мини‑погрузчик в аренду. Гзпроект Сервис Автоматики — навесное оборудование, работа с оператором, расчёт стоимости онлайн.">
+    <meta name="keywords" content="аренда мини-погрузчика, минипогрузчик, спецтехника, навесное, смена, оператор">
+    <title>Мини‑погрузчик — аренда | Гзпроект Сервис Автоматики</title>
+    <link rel="icon" href="img/сфкы.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="car-page.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="new-header">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-first">ГЗ</span>
+                    <span class="logo-motors">ПРОЕКТ</span>
+                    <span class="logo-number">•</span>
+                    <span class="logo-motors">СЕРВИС</span>
+                    <span class="logo-motors">АВТОМАТИКИ</span>
+                </a>
+            </div>
+        </div>
+        <hr class="header-divider">
+        <div class="header-nav">
+            <button class="burger-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">ГЛАВНАЯ</a>
+                <a href="cars.html" class="nav-link">ТЕХНИКА</a>
+                <a href="index.html#conditions" class="nav-link">УСЛОВИЯ</a>
+                <a href="about.html" class="nav-link">О КОМПАНИИ</a>
+                <a href="contact.html" class="nav-link">КОНТАКТЫ</a>
+            </nav>
+            <a class="header-cta" href="contact.html#request">Оставить заявку</a>
+        </div>
+        <hr class="header-divider-bottom">
+    </header>
+
+    <main class="car-page-main">
+        <nav class="breadcrumbs">
+            <a href="index.html">Главная</a>
+            <span>/</span>
+            <a href="cars.html">Техника</a>
+            <span>/</span>
+            <span>Мини‑погрузчик</span>
+        </nav>
+
+        <div class="car-page-container">
+            <div class="car-photo-section">
+                <div class="car-main-image">
+                    <img src="img/1200x900%20(1).webp" alt="Мини‑погрузчик" class="main-image">
+                </div>
+            </div>
+
+            <div class="car-info-section">
+                <div class="car-header">
+                    <div class="car-brand">ПОГРУЗКА</div>
+                    <h1 class="car-title">Мини‑погрузчик</h1>
+                    <div class="car-year">Мин. заказ: 4 ч</div>
+                </div>
+
+                <div class="car-price-section">
+                    <div class="car-price">от 14 000 ₽/смена</div>
+                    <div class="car-status">По заявке</div>
+                </div>
+
+                <div class="car-actions">
+                    <a class="btn-primary" href="contact.html#request" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">Оставить заявку</a>
+                    <a class="btn-secondary" href="cars.html" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">Назад в каталог</a>
+                </div>
+
+                <section class="rental-calculator" aria-label="Калькулятор аренды"
+                    data-rate-hour="2500"
+                    data-rate-shift="14000"
+                    data-min-hours="4"
+                    data-shift-hours="8"
+                    data-delivery-default="0">
+                    <h3>Калькулятор аренды</h3>
+                    <div class="rc-grid">
+                        <div class="rc-row">
+                            <label for="rc_mode_5">Тариф</label>
+                            <select id="rc_mode_5" data-rc-mode>
+                                <option value="shift">Смена</option>
+                                <option value="hour">Почасовой</option>
+                            </select>
+                        </div>
+                        <div class="rc-row" data-rc-row="hours">
+                            <label for="rc_hours_5">Часы</label>
+                            <input id="rc_hours_5" data-rc-hours type="number" inputmode="numeric" min="1" step="1" value="4">
+                        </div>
+                        <div class="rc-row" data-rc-row="shifts">
+                            <label for="rc_shifts_5">Смены</label>
+                            <input id="rc_shifts_5" data-rc-shifts type="number" inputmode="numeric" min="1" step="1" value="1">
+                        </div>
+                        <div class="rc-row">
+                            <label for="rc_delivery_5">Подача/доставка, ₽</label>
+                            <input id="rc_delivery_5" data-rc-delivery type="number" inputmode="numeric" min="0" step="100" value="0">
+                        </div>
+                        <div class="rc-row">
+                            <label for="rc_discount_5">Скидка, ₽</label>
+                            <input id="rc_discount_5" data-rc-discount type="number" inputmode="numeric" min="0" step="100" value="0">
+                        </div>
+                    </div>
+                    <div class="rc-summary" aria-live="polite">
+                        <div class="rc-line"><span>Аренда</span><strong data-rc-subtotal>—</strong></div>
+                        <div class="rc-line"><span>Подача</span><strong data-rc-delivery-out>—</strong></div>
+                        <div class="rc-line"><span>Скидка</span><strong data-rc-discount-out>—</strong></div>
+                        <div class="rc-line rc-total"><span>Итого</span><strong data-rc-total>—</strong></div>
+                    </div>
+                    <div class="rc-hint" data-rc-hint></div>
+                </section>
+            </div>
+        </div>
+
+        <section class="equipment-description">
+            <h2>Описание</h2>
+            <p>Мини‑погрузчик эффективен на объектах с ограниченным пространством: во дворах, на небольших стройплощадках и в зонах благоустройства. Техника подходит для погрузки, перемещения материалов и расчистки территории.</p>
+            <p>За счёт компактности и манёвренности мини‑погрузчик позволяет выполнять работы там, где крупная техника не проходит. При необходимости можно использовать навесное оборудование под конкретную задачу.</p>
+            <p>Подаём технику с оператором, расчёт ведём по часу или по смене. До выезда уточняем условия на объекте и оформляем работу по договору с закрывающими документами.</p>
+            <ul>
+                <li>Работа в стеснённых условиях без потери производительности</li>
+                <li>Навесное оборудование по запросу</li>
+                <li>Прозрачный расчёт и документальное сопровождение</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo-wrapper">
+                        <div class="footer-logo-text">ГЗПРОЕКТ СЕРВИС АВТОМАТИКИ</div>
+                    </div>
+                    <p class="footer-tagline">Аренда спецтехники с оператором</p>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-contact-minimal">
+                        <a href="tel:+79000000000" class="footer-phone-link">+7 (900) 000-00-00</a>
+                        <p class="footer-address">Работаем по городу и области. Подача техники на объект по согласованию.</p>
+                    </div>
+                    
+                    <div class="footer-social-minimal">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <img src="img/Tilda_Icons_26sn_facebook.png" alt="Facebook" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <img src="img/Group.png" alt="Instagram" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <img src="img/telegram 1.png" alt="Telegram" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Гзпроект Сервис Автоматики. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/rental-calculator.js"></script>
+</body>
+
+</html>

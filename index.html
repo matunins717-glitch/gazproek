@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Гзпроект Сервис Автоматики — аренда спецтехники с оператором. Быстрая подача, прозрачные условия, работа по договору.">
+    <meta name="keywords" content="аренда спецтехники, спецтехника, экскаватор, погрузчик, автокран, манипулятор, самосвал, аренда с оператором">
+    <meta property="og:title" content="Гзпроект Сервис Автоматики — аренда спецтехники">
+    <meta property="og:description" content="Аренда спецтехники с оператором. Быстрая подача и работа по договору.">
+    <meta property="og:type" content="website">
+    <title>Гзпроект Сервис Автоматики — аренда спецтехники</title>
+    <link rel="icon" href="img/сфкы.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="new-header">
+        <div class="header-top">
+            <div class="header-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-motors">Газпроект</span>
+                    <span class="logo-number">•</span>
+                    <span class="logo-motors">СЕРВИС</span>
+                    <span class="logo-motors">АВТОМАТИКИ</span>
+                </a>
+            </div>
+        </div>
+        <hr class="header-divider">
+        <div class="header-nav">
+            <button class="nav-icon search-icon" aria-label="Поиск">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+            <button class="burger-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav">
+                <a href="cars.html" class="nav-link">ТЕХНИКА</a>
+                <a href="#conditions" class="nav-link">УСЛОВИЯ</a>
+                <a href="about.html" class="nav-link">О КОМПАНИИ</a>
+                <a href="contact.html" class="nav-link">КОНТАКТЫ</a>
+            </nav>
+            <a class="header-cta" href="#" id="openRequestModalTop">Заказать технику</a>
+        </div>
+        <hr class="header-divider-bottom">
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <div class="search-box">
+                    <svg class="search-icon-large" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Поиск..." id="searchInput">
+                    <button class="search-close" aria-label="Закрыть поиск">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="video-slider-section">
+        <div class="video-slider-container">
+            <div class="video-slider-wrapper">
+                <div class="video-slider">
+                    <div class="video-slide active">
+                        <video class="slider-video" autoplay muted loop playsinline preload="auto">
+                            <source src="https://assets.mixkit.co/videos/10161/10161-720.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-overlay">
+                            <h2 class="video-title">Аренда спецтехники</h2>
+                            <p class="video-subtitle">Подача на объект и работа по договору</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Buy">
+        <div class="Buy-cars">
+            <div class="text-8">
+                <h1 class="h7">ПОПУЛЯРНАЯ ТЕХНИКА В АРЕНДУ</h1>
+            </div>
+            <style>
+                .Buy .card-car-image {
+                    transform: scale(1.15);
+                    object-fit: cover;
+                }
+                .Buy .card-image-wrapper {
+                    overflow: hidden;
+                    height: 280px;
+                }
+            </style>
+            <div class="cars-slider-container">
+                <div class="cars-slider-wrapper">
+                    <div class="cars-slider-track">
+                        <div class="cars-slide active">
+                            <div class="Karts">
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900%20(3).webp" alt="Экскаватор‑погрузчик" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Экскаватор‑погрузчик</h3>
+                        <p class="card-mileage">С оператором • 1 смена от 8 часов</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 18 000 ₽/смена</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="1ndex.html" class="card-link" aria-label="Экскаватор‑погрузчик — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900%20(2).webp" alt="Автокран" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Автокран</h3>
+                        <p class="card-mileage">С оператором • подача на объект</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 22 000 ₽/смена</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="2index.html" class="card-link" aria-label="Автокран — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/gen1200.jpg" alt="Манипулятор" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Манипулятор</h3>
+                        <p class="card-mileage">Почасовая/сменная оплата</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 2 800 ₽/час</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="3index.html" class="card-link" aria-label="Манипулятор — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900.webp" alt="Самосвал" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Самосвал</h3>
+                        <p class="card-mileage">Вывоз/доставка материалов</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 2 500 ₽/час</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="4index.html" class="card-link" aria-label="Самосвал — подробнее"></a>
+                </div>
+                            </div>
+                        </div>
+                        <div class="cars-slide">
+                            <div class="Carts">
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900%20(1).webp" alt="Мини‑погрузчик" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Мини‑погрузчик</h3>
+                        <p class="card-mileage">С навесным оборудованием</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 14 000 ₽/смена</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="5index.html" class="card-link" aria-label="Мини‑погрузчик — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900%20(4).webp" alt="Автовышка" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Автовышка</h3>
+                        <p class="card-mileage">Электромонтаж/фасады/реклама</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 2 200 ₽/час</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="6index.html" class="card-link" aria-label="Автовышка — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900%20(5).webp" alt="Каток" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Каток</h3>
+                        <p class="card-mileage">Дороги/площадки</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 16 000 ₽/смена</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="7index.html" class="card-link" aria-label="Каток — подробнее"></a>
+                </div>
+                <div class="Kart new-card">
+                    <div class="card-image-wrapper">
+                        <img class="card-car-image" src="img/1200x900n.webp" alt="Экскаватор" loading="lazy">
+                        <div class="carousel-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-brand">
+                            <span class="brand-name">АРЕНДА</span>
+                        </div>
+                        <h3 class="card-model">Экскаватор</h3>
+                        <p class="card-mileage">С оператором • разные объемы ковша</p>
+                        <div class="card-price-wrapper">
+                            <span class="card-price">от 20 000 ₽/смена</span>
+                            <span class="price-arrow">▼</span>
+                        </div>
+                    </div>
+                    <a href="8index.html" class="card-link" aria-label="Экскаватор — подробнее"></a>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cars-slider-dots">
+                    <span class="cars-dot active" data-slide="0"></span>
+                    <span class="cars-dot" data-slide="1"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews-section">
+        <div class="reviews-container">
+            <h2 class="reviews-title">ОТЗЫВЫ КЛИЕНТОВ</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>АИ</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Александр Иванов</h3>
+                            <p class="review-location">Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Нужна была техника на объект “на вчера”. Подали экскаватор‑погрузчик быстро, оператор опытный, документы оформили без лишней волокиты.</p>
+                    <p class="review-date">15 января 2024</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>МП</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Мария Петрова</h3>
+                            <p class="review-location">Санкт-Петербург, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Заказывали автовышку для монтажа. Приехали вовремя, работа организована, оплата по договору — всё прозрачно.</p>
+                    <p class="review-date">8 февраля 2024</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>ДС</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Дмитрий Смирнов</h3>
+                            <p class="review-location">Екатеринбург, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Брали манипулятор на доставку материалов и разгрузку. Машина и водитель — в порядке, отработали быстро.</p>
+                    <p class="review-date">22 марта 2024</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>ЕК</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Елена Козлова</h3>
+                            <p class="review-location">Новосибирск, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Понравилось, что сразу предложили несколько вариантов техники под задачу и помогли рассчитать смены. Будем обращаться ещё.</p>
+                    <p class="review-date">5 апреля 2024</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>ВМ</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Владимир Морозов</h3>
+                            <p class="review-location">Казань, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Самосвалы подали на вывоз грунта, сработали четко и без простоев. Менеджер постоянно был на связи.</p>
+                    <p class="review-date">12 мая 2024</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <span>АН</span>
+                        </div>
+                        <div class="review-author">
+                            <h3 class="review-name">Анна Новикова</h3>
+                            <p class="review-location">Краснодар, Россия</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Заказывали автокран на монтаж. Важна была точность по времени — всё соблюли, без сюрпризов по цене.</p>
+                    <p class="review-date">3 июня 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="big-Info" id="conditions">
+        <div class="text-11">
+            <h1>Как арендовать спецтехнику<br>в «Гзпроект Сервис Автоматики»</h1>
+        </div>
+        <div class="infos">
+            <div class="info-1">
+                <h1 class="h8">1</h1>
+                <div class="text-13">
+                    <h3 class="h9">ЗАЯВКА</h3>
+                    <p class="p5">Оставляете заявку на сайте или звоните. Менеджер уточнит задачу, адрес, сроки и нужную технику.
+                    </p>
+                </div>
+            </div>
+            <div class="info-2">
+                <h1 class="h8">2</h1>
+                <div class="text-13">
+                    <h3 class="h9">СОГЛАСОВАНИЕ</h3>
+                    <p class="p5">Подбираем технику, согласуем стоимость (час/смена), подачу и условия. Оформляем договор и закрывающие документы.</p>
+                </div>
+            </div>
+            <div class="info-3">
+                <h1 class="h8">3</h1>
+                <div class="text-13">
+                    <h3 class="h9">ПОДАЧА ТЕХНИКИ</h3>
+                    <p class="p5">Организуем подачу на объект в согласованное время. Техника приезжает с оператором и готова к работе.</p>
+                </div>
+            </div>
+        </div>
+        <div class="infoss">
+            <div class="info-4">
+                <h1 class="h8">4</h1>
+                <div class="text-13">
+                    <h3 class="h9">РАБОТА НА ОБЪЕКТЕ</h3>
+                    <p class="p5">Работаем по ТЗ, соблюдаем технику безопасности. Фиксируем часы/смены, помогаем избежать простоев.</p>
+                </div>
+            </div>
+            <div class="info-5">
+                <h1 class="h8">5</h1>
+                <div class="text-14">
+                    <h3 class="h9">ОТПРАВИТЬ ЗАПРОС</h3>
+                    <div class="text-15">
+                        <p class="p5">Оставьте контакты и кратко опишите задачу — подберём технику и рассчитаем стоимость.</p>
+                        <button class="but-7" id="openRequestModal">ОСТАВИТЬ ЗАЯВКУ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-section">
+        <div class="news-container">
+            <h2 class="news-title">ПОЛЕЗНОЕ И НОВОСТИ</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image-wrapper">
+                        <div class="news-image-placeholder">🏗️</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 января 2024</span>
+                        <h3 class="news-card-title">Как выбрать технику под земляные работы</h3>
+                        <p class="news-text">Экскаватор, экскаватор‑погрузчик или мини‑погрузчик — краткий гид по выбору под задачу и условия на объекте.</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image-wrapper">
+                        <div class="news-image-placeholder">📄</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">8 февраля 2024</span>
+                        <h3 class="news-card-title">Документы и закрывающие по аренде спецтехники</h3>
+                        <p class="news-text">Что важно предусмотреть в договоре, как фиксируются часы/смены и какие документы выдаются по факту работ.</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image-wrapper">
+                        <div class="news-image-placeholder">⏱️</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">22 марта 2024</span>
+                        <h3 class="news-card-title">Как сократить простои на объекте</h3>
+                        <p class="news-text">Планирование подачи, подготовка площадки, логистика материалов — простые шаги, которые экономят время и бюджет.</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image-wrapper">
+                        <div class="news-image-placeholder">🛠️</div>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">5 апреля 2024</span>
+                        <h3 class="news-card-title">Навесное оборудование: когда оно действительно нужно</h3>
+                        <p class="news-text">Гидромолот, ковши, вилы и другое навесное — что выбрать и как это влияет на стоимость и скорость работ.</p>
+                        <a href="#" class="news-link">Читать далее →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo-wrapper">
+                        <div class="footer-logo-text">ГЗПРОЕКТ СЕРВИС АВТОМАТИКИ</div>
+                    </div>
+                    <p class="footer-tagline">Аренда спецтехники с оператором</p>
+                </div>
+                
+                <div class="footer-info">
+                    <div class="footer-contact-minimal">
+                        <a href="tel:+79000000000" class="footer-phone-link">+7 (900) 000-00-00</a>
+                        <p class="footer-address">Работаем по городу и области. Подача техники на объект по согласованию.</p>
+                    </div>
+                    
+                    <div class="footer-social-minimal">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <img src="img/Tilda_Icons_26sn_facebook.png" alt="Facebook" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <img src="img/Group.png" alt="Instagram" loading="lazy">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <img src="img/telegram 1.png" alt="Telegram" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Гзпроект Сервис Автоматики. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для заявки -->
+    <div class="request-modal-overlay" id="requestModal">
+        <div class="request-modal">
+            <button class="request-modal-close" aria-label="Закрыть">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="request-modal-content">
+                <h2 class="request-modal-title">Оставить заявку</h2>
+                <p class="request-modal-subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                <form class="request-form" id="requestForm">
+                    <div class="form-group">
+                        <label for="requestName" class="form-label">Ваше имя *</label>
+                        <input type="text" id="requestName" name="name" class="form-input" required placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="requestPhone" class="form-label">Телефон *</label>
+                        <input type="tel" id="requestPhone" name="phone" class="form-input" required placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-group">
+                        <label for="requestEmail" class="form-label">Email</label>
+                        <input type="email" id="requestEmail" name="email" class="form-input" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="requestMessage" class="form-label">Сообщение</label>
+                        <textarea id="requestMessage" name="message" class="form-textarea" rows="4" placeholder="Расскажите о вашем запросе..."></textarea>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agreement" required>
+                            <span>Я согласен с <a href="#" class="form-link">политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Поиск
+        (function() {
+            'use strict';
+            
+            const searchIcon = document.querySelector('.search-icon');
+            const searchOverlay = document.getElementById('searchOverlay');
+            const searchInput = document.getElementById('searchInput');
+            const searchClose = document.querySelector('.search-close');
+            
+            if (!searchIcon || !searchOverlay || !searchInput || !searchClose) return;
+            
+            // Открытие поиска
+            searchIcon.addEventListener('click', function(e) {
+                e.preventDefault();
+                searchOverlay.classList.add('active');
+                setTimeout(() => {
+                    searchInput.focus();
+                }, 100);
+            });
+            
+            // Закрытие поиска
+            searchClose.addEventListener('click', function() {
+                searchOverlay.classList.remove('active');
+                searchInput.value = '';
+            });
+            
+            // Закрытие по клику вне области поиска
+            searchOverlay.addEventListener('click', function(e) {
+                if (e.target === searchOverlay) {
+                    searchOverlay.classList.remove('active');
+                    searchInput.value = '';
+                }
+            });
+            
+            // Закрытие по Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+                    searchOverlay.classList.remove('active');
+                    searchInput.value = '';
+                }
+            });
+        })();
+        
+        // Слайдер с видео
+        (function() {
+            'use strict';
+            
+            const slides = document.querySelectorAll('.video-slide');
+            const dots = document.querySelectorAll('.video-dot');
+            const prevBtn = document.querySelector('.video-prev-btn');
+            const nextBtn = document.querySelector('.video-next-btn');
+            let currentSlide = 0;
+            let autoplayInterval;
+            
+            if (!slides.length) return;
+
+            if (slides.length === 1) {
+                const oneVideo = slides[0].querySelector('.slider-video');
+                if (oneVideo) {
+                    oneVideo.play().catch(() => {});
+                }
+                return;
+            }
+            
+            // Функция предзагрузки следующего видео
+            function preloadNextVideo() {
+                const nextIndex = (currentSlide + 1) % slides.length;
+                const nextVideo = slides[nextIndex].querySelector('.slider-video');
+                if (nextVideo && nextVideo.readyState < 2) {
+                    nextVideo.load();
+                }
+            }
+            
+            // Функция показа слайда
+            function showSlide(index) {
+                // Останавливаем все видео
+                slides.forEach((slide, i) => {
+                    const video = slide.querySelector('.slider-video');
+                    if (video) {
+                        video.pause();
+                        slide.classList.remove('active');
+                    }
+                });
+                
+                // Обновляем индекс
+                currentSlide = index;
+                if (currentSlide >= slides.length) currentSlide = 0;
+                if (currentSlide < 0) currentSlide = slides.length - 1;
+                
+                // Показываем текущий слайд
+                slides[currentSlide].classList.add('active');
+                const currentVideo = slides[currentSlide].querySelector('.slider-video');
+                if (currentVideo) {
+                    // Если видео еще не загружено, загружаем его
+                    if (currentVideo.readyState < 2) {
+                        currentVideo.load();
+                    }
+                    currentVideo.currentTime = 0;
+                    currentVideo.play().catch(e => console.log('Video autoplay prevented'));
+                }
+                
+                // Предзагружаем следующее видео
+                preloadNextVideo();
+                
+                // Обновляем точки
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
+            
+            // Следующий слайд
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+            
+            // Предыдущий слайд
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+            
+            // Обработчики кнопок
+            if (nextBtn) {
+                nextBtn.addEventListener('click', nextSlide);
+            }
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', prevSlide);
+            }
+            
+            // Обработчики точек
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showSlide(index));
+            });
+            
+            // Автопрокрутка
+            function startAutoplay() {
+                autoplayInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+            
+            // Пауза автопрокрутки при наведении
+            const sliderWrapper = document.querySelector('.video-slider-wrapper');
+            if (sliderWrapper) {
+                sliderWrapper.addEventListener('mouseenter', stopAutoplay);
+                sliderWrapper.addEventListener('mouseleave', startAutoplay);
+            }
+            
+            // Инициализация
+            showSlide(0);
+            startAutoplay();
+            
+            // Обработка видимости вкладки
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    stopAutoplay();
+                } else {
+                    startAutoplay();
+                }
+            });
+        })();
+        
+        // Слайдер для карточек машин
+        (function() {
+            'use strict';
+            
+            const slides = document.querySelectorAll('.cars-slide');
+            const dots = document.querySelectorAll('.cars-dot');
+            const track = document.querySelector('.cars-slider-track');
+            let currentSlide = 0;
+            let autoplayInterval;
+            
+            if (!slides.length || !track) return;
+            
+            // Функция показа слайда
+            function showSlide(index) {
+                // Обновляем индекс
+                currentSlide = index;
+                if (currentSlide >= slides.length) currentSlide = 0;
+                if (currentSlide < 0) currentSlide = slides.length - 1;
+                
+                // Перемещаем трек
+                const translateX = -currentSlide * 100;
+                track.style.transform = `translateX(${translateX}%)`;
+                
+                // Обновляем классы слайдов
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === currentSlide);
+                });
+                
+                // Обновляем точки
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
+            
+            // Следующий слайд
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+            
+            // Обработчики точек
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showSlide(index));
+            });
+            
+            // Автопрокрутка (каждые 5 секунд = 5000 мс)
+            function startAutoplay() {
+                autoplayInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+            
+            // Пауза автопрокрутки при наведении
+            const sliderContainer = document.querySelector('.cars-slider-container');
+            if (sliderContainer) {
+                sliderContainer.addEventListener('mouseenter', stopAutoplay);
+                sliderContainer.addEventListener('mouseleave', startAutoplay);
+            }
+            
+            // Инициализация
+            showSlide(0);
+            startAutoplay();
+            
+            // Обработка видимости вкладки
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    stopAutoplay();
+                } else {
+                    startAutoplay();
+                }
+            });
+        })();
+        
+        // Модальное окно для заявки
+        (function() {
+            'use strict';
+            
+            const openBtn = document.getElementById('openRequestModal');
+            const openBtnTop = document.getElementById('openRequestModalTop');
+            const modal = document.getElementById('requestModal');
+            const closeBtn = document.querySelector('.request-modal-close');
+            const form = document.getElementById('requestForm');
+            const phoneInput = document.getElementById('requestPhone');
+            
+            if (!openBtn || !modal || !closeBtn || !form) return;
+            
+            // Маска для телефона
+            if (phoneInput) {
+                phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                    if (value.length > 0) {
+                        if (value[0] === '7' || value[0] === '8') {
+                            value = '7' + value.substring(1);
+                        } else {
+                            value = '7' + value;
+                        }
+                        let formatted = '+7';
+                        if (value.length > 1) {
+                            formatted += ' (' + value.substring(1, 4);
+                        }
+                        if (value.length >= 4) {
+                            formatted += ') ' + value.substring(4, 7);
+                        }
+                        if (value.length >= 7) {
+                            formatted += '-' + value.substring(7, 9);
+                        }
+                        if (value.length >= 9) {
+                            formatted += '-' + value.substring(9, 11);
+                        }
+                        e.target.value = formatted;
+                    }
+                });
+            }
+            
+            // Открытие модального окна
+            openBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                // Фокус на первое поле
+                setTimeout(() => {
+                    const firstInput = form.querySelector('input[type="text"]');
+                    if (firstInput) firstInput.focus();
+                }, 100);
+            });
+
+            if (openBtnTop) {
+                openBtnTop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openBtn.click();
+                });
+            }
+            
+            // Закрытие модального окна
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+                form.reset();
+            }
+            
+            closeBtn.addEventListener('click', closeModal);
+            
+            // Закрытие по клику вне модального окна
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Закрытие по Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+            
+            // Обработка отправки формы
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Здесь можно добавить отправку данных на сервер
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                
+                // Имитация отправки
+                const submitBtn = form.querySelector('.form-submit-btn');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Отправка...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+                    closeModal();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 1000);
+            });
+        })();
+    </script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
